@@ -11,6 +11,17 @@
  * @return {ListNode}
  */
 
+
+ /*
+Question: 
+
+You are given the heads of two sorted linked lists list1 and list2.
+
+Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
+
+Return the head of the merged linked list.
+ */
+
 const mergeTwoLists = (list1, list2) => {
     //create a new dummy starting point for our new merged linked list
     const dummy = new ListNode(-Infinity)
@@ -39,7 +50,7 @@ const mergeTwoLists = (list1, list2) => {
     //if list2 is empty merge in list1
     if (!list2) prev.next = list1
 
-    //return everything after our dummy node
+    //return everything after our dummy node (the new head)
     return dummy.next
 
 }
